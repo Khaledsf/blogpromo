@@ -79,11 +79,10 @@ GEM
     mini_portile2 (2.3.0)
     minitest (5.11.3)
     multi_json (1.13.1)
-    mysql2 (0.3.21)
     nio4r (2.3.0)
     nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
-    pg (0.15.1)
+    pg (0.20.0)
     puma (4.0.1)
       nio4r (~> 2.0)
     rack (2.0.4)
@@ -122,6 +121,10 @@ GEM
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
     rdoc (4.3.0)
+    rename (1.0.6)
+      activesupport
+      rails (>= 3.0.0)
+      thor (>= 0.19.1)
     sass (3.5.6)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -171,11 +174,11 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
   jquery-rails
-  mysql2 (~> 0.3.20)
-  pg
+  pg (= 0.20.0)
   puma
   rails (= 5.0.2)
   rails_12factor
+  rename
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   turbolinks

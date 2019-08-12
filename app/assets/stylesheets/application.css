@@ -11,8 +11,8 @@
  * file per style scope.
  *
  * require_tree .
- *= require hdr_ftr
  *= require welcome
+ *= require hdr_ftr
  *= require article
  *= require_self
  */

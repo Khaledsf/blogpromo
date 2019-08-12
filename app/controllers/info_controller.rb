@@ -1,5 +1,5 @@
 class InfoController < ApplicationController
-
+	layout :false
 	def about
 	end
 

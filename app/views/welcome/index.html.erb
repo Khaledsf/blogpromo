@@ -1,6 +1,6 @@
 <!-- main content of the page -->
-<div id="div-text-articles"><h2>Articles</h2>
-</div>
+	<div id="div-text-articles"><h2>Articles</h2>
+	</div>
 <% @article.each do |a| %>	
 	<section class="main-sec">
 		<header id="header-sec">
@@ -8,7 +8,8 @@
 		</header>
 		<article class= "article-text">
 			<p class="p-text"><%=raw a.intro %></p>
-			<p class="p-readme"><%= link_to('READ MORE..', article_path(a.id), :class => 'action new') %></p>
+			<p class="p-readme"><%= link_to('READ MORE..', article_path(a.id), :class => 'action new') %>
+			</p>
 		</article>
 	</section>
 <%end%>

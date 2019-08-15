@@ -39,7 +39,7 @@ class UsersController < ApplicationController
         flash[:notice] = "Choose another username"
         redirect_to(users_register_path)
       else
-        new_user = User.create("username" => params[:username], "email" => params[:email], "password" => params[:password])
+        new_user = User.create("username" => params[:username].downcase, "email" => params[:email], "password" => params[:password])
       end
       if new_user
         session[:user_id] = new_user.id

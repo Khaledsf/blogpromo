@@ -1,16 +1,18 @@
-<h1>Articles#new</h1>
-<p>Find me in app/views/articles/new.html.erb</p>
-
+<div id="new-article-title">Creating a new article</div>
 <%= form_for @article do |f| %>
-	<h2>title</h2>
-  <%= f.text_area :title %><br />
-  <h2>intro</h2>
-  <%= f.text_area :intro %><br />
+	
+	<h2 class="heading">title</h2>
+  <%= f.text_area :title, id: 'article-edit-title' %><br />
+  
+  <h2 class="heading">intro</h2>
+  <%= f.text_area :intro, id: 'article-edit-intro' %><br />
 
-  <h2>body tag</h2>
-	<%= f.text_area :bodytag %><br />
-  <h2>body</h2>
-  <%= f.text_area :body %><br />
+  <h2 class="heading">body tag</h2>
+	<%= f.text_area :bodytag, id: 'article-edit-bodytag' %><br />
+  
+  <h2 class="heading">body</h2>
+  <%= f.text_area :body, id: 'article-edit-body'  %><br />
 
-  <%= f.submit('create') %>
+  <%= f.submit('create', :class => "submitbtn") %>
+
 <% end %>

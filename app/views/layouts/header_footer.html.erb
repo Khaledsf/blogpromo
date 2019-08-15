@@ -28,11 +28,11 @@
 					<div id="wrap-footer">
 						<div id="subscribe">
 							<h2 class="heading-h2"><span>Subscribe</span></h2>
-							<form action="action_page.php">
+							<form id="subscribe-form">
 								<p class="text-form">Enter email bellow:</caption><br>
-								<input type="text" name="firstname" value="">
+								<input type="text" name="firstname" value="", class="email">
 								<br><br>
-								<input type="submit" value="Submit">
+								<input type="submit" value="send" form="subscribe-form", class="sub-btn">
 							</form>
 						</div>
 						<div id="contact">
@@ -43,29 +43,24 @@
 						<div id="followme">
 							<h2 class="heading-h2"><span>Folow me</span></h2>
 							<div class="logo">
-								<a href="">
-									<img src="/assets/linkedIn-icon-logo.png" style="width:35px;height:35px; border-radius: 6px;">
-								</a>
+								<%= link_to('http://linkedin.com/in/bouchama', :target => '_blank') do %>
+								<%= image_tag("linkedIn-icon-logo.png", alt: "Linkedin", :class => "images")%>
+								<%end%>
 							</div>
 							<div class="logo">
-								<a href="https://github.com/khaledsf">
-									<img src="/assets/Octocat.jpg" alt="Github" style="width:35px;height:35px; border-radius: 6px;">
-								</a>
+								<%= link_to('http://github.com/khaledsf', :target => '_blank') do %>
+								<%= image_tag("Octocat.jpg", alt: "Github", :class => "images")%>
+								<%end%>
 							</div>
 							<div class="logo">
-								<a href="">
-									<img src="/assets/google-Plus-icon.png" alt="Google+" style="width:35px;height:35px; border-radius: 6px;"/>
-								</a>
-							</div>
-							<div class="logo">
-								<img src="/assets/Twitterlogo.png" alt="
-								Twitter" style="width:35px;height:35px; border-radius: 6px;">
-								</a>
+								<%= link_to('http://twitter.com/jingosf') do %>
+								<%= image_tag("Twitterlogo.png", alt: "Twitter", :class => "images")%>
+								<%end%>
 							</div>
 						</div>
 					</div>
 					<div id="copyright">
-							<p id="copyright-text">khaledbouchama.com 2015. All rights reserved</p>
+							<p id="copyright-text">khaledbouchama.com | 2019 | All rights reserved</p>
 					</div>
 				</footer>
 				</div>

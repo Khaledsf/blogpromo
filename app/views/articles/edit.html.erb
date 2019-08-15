@@ -1,20 +1,19 @@
-<h1>Articles#edit</h1>
-<p>Find me in app/views/articles/edit.html.erb</p>
-
-
-<h1>Articles#new</h1>
-<p>Find me in app/views/articles/new.html.erb</p>
+<h1 id="return"><%= link_to("<<< back to main page", admins_manage_articles_path) %></h1>
 
 <%= form_for @article do |f| %>
-	<h2>title</h2>
-  <%= f.text_area :title %><br />
-  <h2>intro</h2>
-  <%= f.text_area :intro %><br />
+	
+	<h2 class="heading">title</h2>
+  <%= f.text_area :title, id: 'article-edit-title' %><br />
+  
+  <h2 class="heading">intro</h2>
+  <%= f.text_area :intro, id: 'article-edit-intro' %><br />
 
-  <h2>body tag</h2>
-	<%= f.text_area :bodytag %><br />
-  <h2>body</h2>
-  <%= f.text_area :body %><br />
+  <h2 class="heading">body tag</h2>
+	<%= f.text_area :bodytag, id: 'article-edit-bodytag' %><br />
+  
+  <h2 class="heading">body</h2>
+  <%= f.text_area :body, id: 'article-edit-body'  %><br />
 
-  <%= f.submit('Update') %>
+  <%= f.submit('update', :class => "submitbtn") %>
+
 <% end %>

@@ -2,25 +2,36 @@
 <head>
 	<title>Portfolio</title>
 	<style type="text/css">
-		body{background-color: #f2f2f2;
+		body{
+			background-color: #f2f2f2;
 		}
 		a:-webkit-any-link {
-    text-decoration: none;
-    cursor: auto;
+    	text-decoration: none;
+    	cursor: auto;
 		}
 		h1{ 
 			text-align: center;
 			font-family: Arial, Helvetica, sans-serif;
 			padding-top: 15px;
 		}
-		div{width: 70%; height: 100%; margin:2em auto;
+		h2{
+			text-align: center;
+			font-family: Arial, Helvetica, sans-serif;
 		}
-		p{font-family: Arial, Helvetica, sans-serif; font-size: 20px; color: #595959; font-weight: 500;
+		div{
+			width: 70%;
+		 	height: 100%; 
+		 	margin:2em auto;
+		}
+		p{
+			font-family: Arial, Helvetica, sans-serif;
+		 	font-size: 20px; color: #595959;
+		  font-weight: 500;
 		}
 	</style>
 </head>
 <body>
-	<h1><%= link_to("<<< go back", root_path) %></h1>
+	<h2><%= link_to("<<< back to main page", root_path) %></h2>
 	<div>
 		<p>&nbsp&nbsp&nbsp As a free lance web developer, I have worked on certain amount of web applications and other projects, that relies on computer technologies, to collect and present geo-coded data on a web platform.</p>
 		<p>&nbsp&nbsp&nbspThis current website is built as a 'ruby on rails' web-frame application. It is an application that is design to have more than one purpose. one is being a blog that is shares some knowledge about major web developement related contents and articles; another purpose is that it is used as a platform to showcase some of the work I have accomplished.<br>

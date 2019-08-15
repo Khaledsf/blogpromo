@@ -24,6 +24,7 @@
 				height: 120px;
 			}
 			#header-h1{
+				font-family: 'Helvetica', 'Arial', sans-serif;
 				margin-top: 40px;
 				float: left;
 				font-size: 150%;
@@ -53,6 +54,8 @@
 				margin-top: 40px;
 			}
 			.header-anchor{
+				font-family: 'Helvetica', 'Arial', sans-serif;
+				letter-spacing: 1px;
 				text-decoration: none;
 				color: #FDFCFC;
 			}
@@ -119,9 +122,9 @@
 				margin-left: 65px;
 			}
 			.logo{
-				margin-left: 20px;
+				margin-left: 17px;
 				margin-top: 5px;
-				float: left;
+				float: right;
 			}
 			#copyright{
 				margin: auto;
@@ -129,7 +132,37 @@
 				height: 30px;
 			}
 			#copyright-text{
-				font-size: 14px;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 10pt;
 				margin-left: 70px;
 				font-weight: bold;
+			}
+			.text-form{
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 12pt;
+			}
+			.email{
+				font-size: 11pt;
+				font-weight: bold;
+				margin-top: 10px;
+				height: 25px;
+				width: 180px;
+				border-radius: 5px;
+			}
+			.sub-btn{
+		    border-radius: 5px;
+		    background-color: #d9d9d9;
+		    font-weight: bold;
+		    font-size: 11pt;
+		    height: 25px;
+				width: 80px;
+			}
+			.contact-p{
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 11pt;
+			}
+			.images{
+				width:35px;
+				height:35px;
+				border-radius: 6px;
 			}

@@ -9,7 +9,7 @@
 	<div class="pic-div"><%= image_tag('userico.png')%></div>
 	<%= form_for Comment.new do |f| %>
 	<aside id="greet-aside">Hello, </aside>
-	<aside id="input-aside"><%= @user%></aside>
+	<aside id="input-aside"><%= @user.capitalize%></aside>
 	<br />
   <%= f.text_area :content, :id => 'input-comment'%>
   <%= f.hidden_field "user_id", :value =>"#{session[:user_id]}" %>

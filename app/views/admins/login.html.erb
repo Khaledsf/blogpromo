@@ -1,18 +1,18 @@
 <h1>Admin login page</h1>
 
-<table>
+<table id="admin-login">
 	<%= form_tag(admins_attempt_login_path, :method => "post") %>
-	<tr>
-		<td><%= label_tag('username')  %></td>
-		<td><%= text_field_tag(:admin_name) %></td>
+	<tr class="login-tr">
+		<td class="login-td"><%= label_tag('username')  %></td>
+		<td class="login-td"><%= text_field_tag(:admin_name) %></td>
 	</tr>
-	<tr>
-		<td><%= label_tag('password') %></td>
-		<td><%= password_field_tag(:password) %></td>
+	<tr class="login-tr">
+		<td class="login-td"><%= label_tag('password') %></td>
+		<td class="login-td"><%= password_field_tag(:password) %></td>
 	</tr>
-	<tr>
-		<td>
-			<%= submit_tag('Submit')  %>
+	<tr class="login-tr">
+		<td class="login-td">
+			<%= submit_tag('Submit', :id => 'login-btn')  %>
 		</td>
 	</tr>
 </table>

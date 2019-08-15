@@ -20,7 +20,11 @@
 			font-family: Arial, Helvetica, sans-serif;
 			}
 		h3{font-family: Arial, Helvetica, sans-serif;
-			}	
+			}
+		h4{text-align: center;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 22px;
+			}
 		li{margin-left: 25px;
 			font-family: Arial, Helvetica, sans-serif;
 			font-size: 20px;
@@ -32,7 +36,8 @@
 	</style>
 </head>
 <body>
-	<h1><%= link_to("<<< go back", root_path) %></h1>
+	<h4><%= link_to("<<< go back to main page", root_path) %></h4>
+	<h4><%= link_to 'download pdf version', '/resume.pdf'%></h4>
 	<div id="wrapper">
 		<div id="spacer">
 			<h1>Khaled Bouchama</h1>
